@@ -1,4 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="VP Nest logo">
-  <rect width="64" height="64" rx="16" fill="#07111f"/>
-  <path d="M20 18h24v8H28v6h14v8H28v6h16v8H20z" fill="#d4af37"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">VP Nest monogram</title>
+  <desc id="desc">Square navy VP monogram with a gold roof and blue and gold nest lines.</desc>
+  <rect width="512" height="512" rx="88" fill="#0B2545"/>
+  <path d="M92 220 L256 88 L420 220" fill="none" stroke="#BE8A2D" stroke-width="30" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="256" y="357" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="174" font-weight="700" letter-spacing="-14" fill="#FFFFFF">VP</text>
+  <path d="M140 394 Q256 458 372 394" fill="none" stroke="#2E74B5" stroke-width="22" stroke-linecap="round"/>
+  <path d="M172 423 Q256 469 340 423" fill="none" stroke="#BE8A2D" stroke-width="14" stroke-linecap="round"/>
 </svg>

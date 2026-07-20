@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">VP Nest – The Studio99Stay</title>
+  <desc id="desc">VP Nest social preview with the brand promise for furnished stays in Greater Noida West.</desc>
+  <rect width="1200" height="630" fill="#0B2545"/>
+  <circle cx="1040" cy="90" r="240" fill="#2E74B5" opacity=".18"/>
+  <circle cx="1100" cy="600" r="300" fill="#BE8A2D" opacity=".12"/>
+  <path d="M90 210L190 130L290 210" fill="none" stroke="#BE8A2D" stroke-width="20" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="190" y="320" text-anchor="middle" font-family="Arial,sans-serif" font-size="120" font-weight="700" fill="#FFFFFF">VP</text>
+  <text x="360" y="230" font-family="Arial,sans-serif" font-size="90" font-weight="700" fill="#FFFFFF">VP NEST</text>
+  <text x="365" y="292" font-family="Arial,sans-serif" font-size="31" font-weight="700" letter-spacing="6" fill="#BE8A2D">THE STUDIO99STAY</text>
+  <line x1="365" y1="326" x2="1060" y2="326" stroke="#2E74B5" stroke-width="6"/>
+  <text x="365" y="400" font-family="Arial,sans-serif" font-size="38" fill="#FFFFFF">Clean, comfortable and professionally managed</text>
+  <text x="365" y="452" font-family="Arial,sans-serif" font-size="38" fill="#FFFFFF">furnished stays in Greater Noida West.</text>
+  <text x="365" y="535" font-family="Arial,sans-serif" font-size="26" font-weight="700" fill="#8FC7EE">WHATSAPP +91 9211701998</text>
+</svg>

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300" role="img" aria-labelledby="title desc">
+  <title id="title">VP Nest white logo</title>
+  <desc id="desc">White VP Nest wordmark for dark backgrounds with gold and blue accents.</desc>
+  <rect width="1200" height="300" fill="#0B2545"/>
+  <g transform="translate(20 30)">
+    <rect x="4" y="4" width="212" height="212" rx="32" fill="none" stroke="#BE8A2D" stroke-width="8"/>
+    <path d="M38 92 L110 35 L182 92" fill="none" stroke="#BE8A2D" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="110" y="164" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="72" font-weight="700" letter-spacing="-5" fill="#FFFFFF">VP</text>
+    <path d="M62 187 Q110 215 158 187" fill="none" stroke="#2E74B5" stroke-width="9" stroke-linecap="round"/>
+    <path d="M76 199 Q110 219 144 199" fill="none" stroke="#BE8A2D" stroke-width="6" stroke-linecap="round"/>
+  </g>
+  <g transform="translate(285 0)">
+    <text x="0" y="142" font-family="DejaVu Sans, Arial, sans-serif" font-size="96" font-weight="700" letter-spacing="2" fill="#FFFFFF">VP NEST</text>
+    <text x="4" y="194" font-family="DejaVu Sans, Arial, sans-serif" font-size="31" font-weight="700" letter-spacing="5" fill="#BE8A2D">THE STUDIO99STAY</text>
+    <line x1="4" y1="217" x2="730" y2="217" stroke="#2E74B5" stroke-width="4"/>
+    <text x="4" y="252" font-family="DejaVu Sans, Arial, sans-serif" font-size="23" font-weight="400" letter-spacing="1" fill="#FFFFFF">Professional stays. Reliable operations.</text>
+  </g>
+</svg>
