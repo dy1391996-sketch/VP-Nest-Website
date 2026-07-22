@@ -114,7 +114,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       try {
         const url = new URL(link.href);
-        const originalMessage = url.searchParams.get('text') || 'Hello VP Nest, I want to check availability.';
+const originalMessage = (url.searchParams.get('text') || 'Hello VP Nest, I want to check availability.').replace(/\n\nEnquiry ID:[\s\S]*$/, '');
         url.searchParams.set('text', `${originalMessage}\n\nEnquiry ID: ${enquiryId}\nSource: ${source}`);
         link.href = url.toString();
       } catch (_) {
