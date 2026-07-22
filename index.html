@@ -55,7 +55,7 @@
           <a href="services.html">Stays & Services</a>
           <a href="gallery.html">Gallery</a>
           <a href="faq.html">FAQ</a>
-          <a class="nav-cta" href="contact.html">Book a Stay</a>
+          <a class="nav-cta" href="contact.html">Check Availability</a>
         </div>
       </nav>
     </header>
@@ -87,7 +87,7 @@
           <div class="field"><label for="quick-date">Check-in date</label><input id="quick-date" name="checkinDate" type="date" required /></div>
           <div class="field"><label for="quick-time">Preferred time</label><input id="quick-time" name="checkinTime" type="time" required /></div>
           <div class="field"><label for="quick-duration">Stay duration</label><select id="quick-duration" name="duration" required><option value="">Select duration</option><option>4–6 hours</option><option>8–10 hours</option><option>12–15 hours</option><option>24 hours</option><option>Multiple nights</option></select></div>
-          <button class="btn btn-blue" type="submit">Check on WhatsApp</button>
+          <button class="btn btn-blue" type="submit">Check Availability</button>
         </form>
       </div>
 
@@ -115,12 +115,39 @@
         </div>
       </section>
 
-      <section class="section container">
-        <div class="section-heading"><p class="eyebrow">Simple booking</p><h2>Three clear steps to your stay.</h2></div>
-        <div class="steps">
-          <div class="step"><h3>Share your requirement</h3><p>Send your date, check-in time, duration and number of guests.</p></div>
-          <div class="step"><h3>Confirm room & price</h3><p>We share the available option, final price and applicable booking terms.</p></div>
-          <div class="step"><h3>Complete booking</h3><p>Pay only after confirmation and receive your check-in details from our team.</p></div>
+      <section class="section container" aria-labelledby="booking-process-heading">
+        <div class="section-heading"><p class="eyebrow">Booking process</p><h2 id="booking-process-heading">From availability check to a genuine review.</h2><p>Every booking stays on WhatsApp so the room, rate, payment and confirmation remain clear in writing.</p></div>
+        <div class="steps booking-process">
+          <article class="step"><h3>Check Availability</h3><p>Share your date, preferred time, duration, guests and room preference.</p></article>
+          <article class="step"><h3>Receive Rate and Room Confirmation</h3><p>VP Nest confirms the available option, final rate and booking terms in writing.</p></article>
+          <article class="step"><h3>Pay Booking Advance</h3><p>Pay only the confirmed advance using the official details shared on WhatsApp.</p></article>
+          <article class="step"><h3>Receive Booking Confirmation</h3><p>Receive a written confirmation after VP Nest verifies the payment.</p></article>
+          <article class="step"><h3>Check-in and Stay</h3><p>Use the confirmed location, timing and support details for your stay.</p></article>
+          <article class="step"><h3>Leave a Genuine Google Review</h3><p>After checkout, share an honest review through the official Google review link.</p></article>
+        </div>
+      </section>
+
+      <section class="section section-soft" aria-labelledby="payment-instructions-heading">
+        <div class="container split">
+          <div class="split-copy">
+            <p class="eyebrow">Payment instructions</p>
+            <h2 id="payment-instructions-heading">Pay only after written confirmation.</h2>
+            <p class="safety-notice"><strong>महत्वपूर्ण भुगतान सूचना</strong>Payment केवल VP Nest से room, date, timing, price और booking terms की written WhatsApp confirmation मिलने के बाद करें।</p>
+            <ol class="instruction-list">
+              <li>Confirm room and total price on WhatsApp.</li>
+              <li>Receive official payment details.</li>
+              <li>Pay the confirmed advance amount.</li>
+              <li>Send payment screenshot on WhatsApp.</li>
+              <li>Receive written booking confirmation.</li>
+            </ol>
+          </div>
+          <div class="info-panel">
+            <h3>Your WhatsApp confirmation will include</h3>
+            <p>After payment is verified, VP Nest sends a written booking confirmation with these details:</p>
+            <div class="confirmation-grid" aria-label="Booking confirmation details">
+              <span>Guest Name</span><span>Booking Reference</span><span>Room/Studio</span><span>Check-in Date and Time</span><span>Stay Duration</span><span>Total Amount</span><span>Advance Paid</span><span>Balance Amount</span><span>Location</span><span>Support Number</span><span>Booking Terms</span>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -128,6 +155,21 @@
         <div class="container split">
           <div class="split-copy"><p class="eyebrow">About VP Nest</p><h2>Hospitality backed by disciplined operations.</h2><p>VP Nest – The Studio99Stay combines guest-focused service with professional housekeeping, booking coordination and property operations. Our goal is simple: make every confirmed stay clean, comfortable and dependable.</p><a class="btn btn-blue" href="about.html">Know Our Story</a></div>
           <div class="info-panel"><h3>Located at Gaur City Center</h3><p>Stay close to the active commercial and residential hub of Greater Noida West.</p><div class="location-list"><div><strong>Verified business address</strong><br />Shop FF-109, Gaur City Center, Sector 4</div><div><strong>Booking support</strong><br />+91 9211701998</div><div><strong>Email</strong><br />thestudio99stay@gmail.com</div></div></div>
+        </div>
+      </section>
+
+      <section class="section container" aria-labelledby="review-heading">
+        <div class="review-card">
+          <div>
+            <p class="eyebrow">After checkout</p>
+            <h2 id="review-heading">Share your genuine VP Nest experience.</h2>
+            <p class="muted">The official Google review button will be activated only after the verified review URL is provided.</p>
+            <p class="config-note">No unverified or placeholder Google review link is currently published.</p>
+          </div>
+          <div class="review-actions">
+            <button id="googleReviewButton" class="btn btn-blue" type="button" disabled aria-disabled="true">Review VP Nest on Google</button>
+            <a class="btn btn-whatsapp" href="https://wa.me/919211701998" data-whatsapp-review-request target="_blank" rel="noopener">Request Review Link on WhatsApp</a>
+          </div>
         </div>
       </section>
 

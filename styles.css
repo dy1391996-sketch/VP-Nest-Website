@@ -32,6 +32,7 @@ a { color: inherit; text-decoration: none; }
 img, svg, iframe { display: block; max-width: 100%; }
 button, input, select, textarea { font: inherit; }
 button, a { -webkit-tap-highlight-color: transparent; }
+button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible { outline: 3px solid rgba(46,116,181,.38); outline-offset: 3px; }
 .container { width: min(1160px, calc(100% - 2rem)); margin-inline: auto; }
 .narrow { width: min(820px, 100%); margin-inline: auto; }
 .section { padding: 5.5rem 0; }
@@ -85,6 +86,9 @@ p { margin: 0 0 1rem; }
 .btn-outline { border-color: rgba(255,255,255,.35); color: var(--white); background: rgba(255,255,255,.05); }
 .btn-blue { background: var(--blue); color: var(--white); }
 .btn-light { background: var(--white); color: var(--navy); }
+.btn-whatsapp { background: #188b4b; color: var(--white); box-shadow: 0 10px 30px rgba(24,139,75,.2); }
+.btn-whatsapp:hover { background: #12743e; }
+.btn:disabled { cursor: not-allowed; opacity: .58; transform: none; box-shadow: none; }
 
 .quick-book { position: relative; z-index: 2; margin-top: -42px; }
 .booking-bar { display: grid; grid-template-columns: 1.1fr 1fr 1fr auto; gap: .9rem; align-items: end; padding: 1.3rem; border: 1px solid var(--border); border-radius: var(--radius); background: var(--white); box-shadow: var(--shadow); }
@@ -122,6 +126,20 @@ p { margin: 0 0 1rem; }
 .step::before { content: '0' counter(booking-step); display: block; margin-bottom: 1rem; color: var(--gold); font-family: 'Montserrat', Arial, sans-serif; font-size: 1.6rem; font-weight: 800; }
 .step h3 { margin-bottom: .5rem; }
 .step p { color: var(--muted); }
+.booking-process .step { border: 1px solid var(--border); border-radius: 18px; background: var(--white); }
+.booking-process .step::before { margin-bottom: .65rem; }
+.safety-notice { padding: 1.35rem 1.5rem; border-left: 5px solid var(--gold); border-radius: 16px; background: var(--gold-light); color: var(--navy); }
+.safety-notice strong { display: block; margin-bottom: .35rem; font-family: 'Montserrat', Arial, sans-serif; }
+.instruction-list { display: grid; gap: .85rem; margin: 1.5rem 0 0; padding: 0; counter-reset: instruction; list-style: none; }
+.instruction-list li { display: flex; align-items: flex-start; gap: .8rem; padding: 1rem; border: 1px solid var(--border); border-radius: 14px; background: var(--white); color: var(--ink); }
+.instruction-list li::before { content: counter(instruction); display: grid; flex: 0 0 32px; height: 32px; place-items: center; border-radius: 50%; background: var(--gold); color: var(--navy-deep); font-weight: 800; counter-increment: instruction; }
+.confirmation-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .75rem; margin-top: 1.4rem; }
+.confirmation-grid span { padding: .85rem 1rem; border: 1px solid rgba(255,255,255,.16); border-radius: 12px; color: rgba(255,255,255,.88); }
+.review-card { display: grid; grid-template-columns: 1fr auto; align-items: center; gap: 2rem; padding: 2rem; border: 1px solid var(--border); border-radius: var(--radius); background: var(--white); box-shadow: var(--shadow); }
+.review-card h2 { margin-bottom: .7rem; }
+.review-card p:last-child { margin-bottom: 0; }
+.review-actions { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: .75rem; }
+.config-note { margin-top: .75rem; color: var(--muted); font-size: .85rem; }
 
 .page-hero { padding: 4.5rem 0 5rem; background: radial-gradient(circle at 80% 20%, rgba(46,116,181,.26), transparent 30%), var(--navy); color: var(--white); }
 .page-hero h1 { max-width: 850px; color: var(--white); font-size: clamp(2.2rem, 4.2vw, 3.8rem); }
@@ -191,6 +209,10 @@ p { margin: 0 0 1rem; }
 .footer-bottom-links { display: flex; gap: 1rem; }
 .floating-whatsapp { position: fixed; right: 1rem; bottom: 1rem; z-index: 60; display: inline-flex; align-items: center; gap: .55rem; padding: .78rem 1rem; border-radius: 999px; background: #1fa855; color: var(--white); box-shadow: 0 12px 32px rgba(0,0,0,.22); font-weight: 800; }
 .floating-whatsapp::before { content: 'WA'; display: grid; width: 28px; height: 28px; place-items: center; border: 2px solid var(--white); border-radius: 50%; font-size: .62rem; }
+.site-booking-actions { position: fixed; right: 50%; bottom: 1rem; z-index: 90; display: grid; width: min(620px, calc(100% - 2rem)); grid-template-columns: 1fr 1fr; gap: .75rem; padding: .7rem; border: 1px solid rgba(255,255,255,.5); border-radius: 999px; background: rgba(255,255,255,.94); box-shadow: 0 16px 48px rgba(7,26,50,.24); transform: translateX(50%); backdrop-filter: blur(14px); }
+.site-booking-actions .btn { width: 100%; min-height: 50px; }
+.has-booking-actions { padding-bottom: 90px; }
+.has-booking-actions .floating-whatsapp { display: none; }
 
 @media (max-width: 980px) {
   .hero-grid, .split, .contact-grid { grid-template-columns: 1fr; }
@@ -217,6 +239,8 @@ p { margin: 0 0 1rem; }
   .cards, .service-grid, .values-grid, .steps, .footer-grid { grid-template-columns: 1fr; }
   .cta-grid, .footer-bottom { align-items: flex-start; flex-direction: column; }
   .footer-grid { gap: 2rem; }
+  .review-card { grid-template-columns: 1fr; }
+  .review-actions { justify-content: flex-start; }
 }
 
 @media (max-width: 600px) {
@@ -233,6 +257,15 @@ p { margin: 0 0 1rem; }
   .page-hero { padding: 3.5rem 0 4rem; }
   .floating-whatsapp span { display: none; }
   .floating-whatsapp { padding: .72rem; }
+  .confirmation-grid { grid-template-columns: 1fr; }
+  .site-booking-actions { bottom: .55rem; width: calc(100% - 1rem); gap: .45rem; padding: .45rem; border-radius: 18px; }
+  .site-booking-actions .btn { min-height: 48px; padding: .7rem .55rem; font-size: .88rem; }
+  .has-booking-actions { padding-bottom: 78px; }
+}
+
+@media print {
+  .site-booking-actions, .floating-whatsapp { display: none !important; }
+  .has-booking-actions { padding-bottom: 0; }
 }
 
 @media (prefers-reduced-motion: reduce) {
