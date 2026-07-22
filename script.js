@@ -1,4 +1,11 @@
-document.addEventListener('DOMContentLoaded', () => {
+window.va = window.va || function () {
+  (window.vaq = window.vaq || []).push(arguments);
+};
+
+const vercelAnalytics = document.createElement('script');
+vercelAnalytics.defer = true;
+vercelAnalytics.src = '/_vercel/insights/script.js';
+document.head.appendChild(vercelAnalytics);document.addEventListener('DOMContentLoaded', () => {
   const BOOKING_NUMBER = '919211701998';
   const nav = document.querySelector('.nav');
   const navToggle = document.querySelector('.nav-toggle');
