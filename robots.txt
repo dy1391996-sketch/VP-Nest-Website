@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://vpnest.in/sitemap.xml
+Sitemap: https://vp-nest-website.vercel.app/sitemap.xml

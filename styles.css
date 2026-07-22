@@ -177,6 +177,7 @@ p { margin: 0 0 1rem; }
 .cta p { max-width: 650px; margin: .7rem 0 0; color: rgba(255,255,255,.74); }
 .legal-copy h2 { margin-top: 2rem; margin-bottom: .7rem; font-size: 1.45rem; }
 .legal-copy p, .legal-copy li { color: var(--muted); }
+.legal-copy a { color: var(--blue); font-weight: 700; text-decoration: underline; text-underline-offset: 3px; }
 
 .footer { padding: 4rem 0 1.6rem; background: var(--navy-deep); color: rgba(255,255,255,.72); }
 .footer-grid { display: grid; grid-template-columns: 1.35fr .8fr .9fr; gap: 3rem; }
