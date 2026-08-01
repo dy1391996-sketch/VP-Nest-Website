@@ -11,8 +11,8 @@ window.VP_NEST_CONFIG = {
   analyticsId: "",
   social: { instagram: "", facebook: "", googleBusiness: "", googleMaps: "", youtube: "", x: "", linkedin: "" },
   pricing: {
-    weekdays: [["4–6 Hours", "₹1,499"], ["8–10 Hours", "₹1,800"], ["12–15 Hours", "₹2,000"], ["24 Hours", "₹2,500"], ["Per Hour", "₹799"]],
-    weekends: [["4–6 Hours", "₹1,800"], ["8–10 Hours", "₹2,000"], ["12–15 Hours", "₹2,300"], ["24 Hours", "₹3,000"], ["Per Hour", "₹999"]]
+    weekdays: [["Up to 3 Hours", "₹1,199"], ["Up to 6 Hours", "₹1,499"], ["Up to 10 Hours", "₹1,799"], ["Up to 12 Hours", "₹1,999"], ["24 Hours", "₹2,499"]],
+    weekends: [["Up to 3 Hours", "₹1,499"], ["Up to 6 Hours", "₹1,799"], ["Up to 10 Hours", "₹2,199"], ["Up to 12 Hours", "₹2,499"], ["24 Hours", "₹2,999"]]
   },
   amenities: [
     "Air Conditioning", "Smart TV", "Netflix/OTT where available", "High-Speed Wi-Fi",
