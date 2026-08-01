@@ -38,6 +38,47 @@
   const amenities = $('#amenitiesGrid');
   if (amenities) amenities.innerHTML = c.amenities.map((x) => `<div class="amenity"><span aria-hidden="true">✓</span><p>${x}</p></div>`).join('');
 
+  const gallery = $('#galleryGrid');
+  const lightbox = $('#lightbox');
+  let activeImage = 0;
+  if (gallery && c.gallery.length) {
+    gallery.innerHTML = c.gallery.map((item, index) => `<button class="concept-card" type="button" data-gallery-index="${index}" aria-label="Open ${item.category} concept visual"><img src="${item.src}" alt="${item.alt}" width="${item.width}" height="${item.height}" loading="${index < 2 ? 'eager' : 'lazy'}" decoding="async"><span class="concept-card-overlay"><strong>${item.category}</strong><span>AI CONCEPT</span></span></button>`).join('');
+  }
+  const showImage = (index) => {
+    if (!lightbox || !c.gallery.length) return;
+    activeImage = (index + c.gallery.length) % c.gallery.length;
+    const item = c.gallery[activeImage];
+    $('#lightboxImage').src = item.src;
+    $('#lightboxImage').alt = item.alt;
+    $('#lightboxCaption').textContent = item.category;
+    $('#lightboxCounter').textContent = `${activeImage + 1} / ${c.gallery.length}`;
+  };
+  gallery?.addEventListener('click', (event) => {
+    const card = event.target.closest('[data-gallery-index]');
+    if (!card) return;
+    showImage(Number(card.dataset.galleryIndex));
+    lightbox.hidden = false;
+    document.body.style.overflow = 'hidden';
+    $('.lightbox-close')?.focus();
+    track('gallery_photo_open', { category: c.gallery[activeImage].category });
+  });
+  const closeLightbox = () => { if (lightbox) lightbox.hidden = true; document.body.style.overflow = ''; };
+  $('.lightbox-close')?.addEventListener('click', closeLightbox);
+  $('.lightbox-prev')?.addEventListener('click', () => showImage(activeImage - 1));
+  $('.lightbox-next')?.addEventListener('click', () => showImage(activeImage + 1));
+  document.addEventListener('keydown', (event) => {
+    if (!lightbox || lightbox.hidden) return;
+    if (event.key === 'Escape') closeLightbox();
+    if (event.key === 'ArrowLeft') showImage(activeImage - 1);
+    if (event.key === 'ArrowRight') showImage(activeImage + 1);
+  });
+  let touchStartX = 0;
+  lightbox?.addEventListener('touchstart', (event) => { touchStartX = event.changedTouches[0].clientX; }, { passive: true });
+  lightbox?.addEventListener('touchend', (event) => {
+    const delta = event.changedTouches[0].clientX - touchStartX;
+    if (Math.abs(delta) > 45) showImage(activeImage + (delta < 0 ? 1 : -1));
+  }, { passive: true });
+
   async function saveLead(payload) {
     const leads = JSON.parse(localStorage.getItem('vpn_leads') || '[]');
     leads.push(payload); localStorage.setItem('vpn_leads', JSON.stringify(leads.slice(-20)));

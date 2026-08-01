@@ -20,5 +20,12 @@ window.VP_NEST_CONFIG = {
     "Professional Housekeeping", "Fresh Linen and Towels", "Self Check-in where available",
     "Parking subject to building rules", "Guest Support"
   ],
-  gallery: []
+  gallery: [
+    { src: "assets/studios/studio-city-view-bedroom.webp", category: "City View Bedroom", alt: "AI concept visual of a premium furnished studio bedroom with a high-floor city view", width: 1672, height: 941 },
+    { src: "assets/studios/studio-luxury-bedroom.webp", category: "Premium Bedroom", alt: "AI concept visual of an elegant furnished studio bedroom with warm wood and navy finishes", width: 1448, height: 1086 },
+    { src: "assets/studios/studio-living-area.webp", category: "Living & Work Area", alt: "AI concept visual of a compact studio living area with sofa and workspace", width: 1448, height: 1086 },
+    { src: "assets/studios/studio-kitchenette.webp", category: "Kitchenette", alt: "AI concept visual of a compact furnished-studio kitchenette", width: 1448, height: 1086 },
+    { src: "assets/studios/studio-smart-tv.webp", category: "Smart TV", alt: "AI concept visual of a premium studio entertainment corner with smart TV", width: 1448, height: 1086 },
+    { src: "assets/studios/studio-night-city-view.webp", category: "Night Ambience", alt: "AI concept visual of a furnished studio overlooking a city skyline at night", width: 1448, height: 1086 }
+  ]
 };
