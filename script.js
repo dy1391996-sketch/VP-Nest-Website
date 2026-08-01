@@ -11,6 +11,10 @@
 
   const qSource = new URLSearchParams(location.search).get("source");
   if (qSource) localStorage.setItem("vpn_source", qSource);
+  $$('input[type="date"]').forEach((input) => {
+    const now = new Date();
+    input.min = `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, '0')}-${String(now.getDate()).padStart(2, '0')}`;
+  });
   $$('[data-current-year]').forEach((el) => el.textContent = new Date().getFullYear());
   $$('[data-phone]').forEach((el) => el.textContent = c.phoneDisplay);
   $$('[data-phone-link]').forEach((el) => el.href = `tel:+${c.phone}`);
@@ -72,4 +76,14 @@
     const s = document.createElement('script'); s.async = true; s.src = `https://www.googletagmanager.com/gtag/js?id=${c.analyticsId}`; document.head.appendChild(s);
     window.dataLayer = window.dataLayer || []; window.gtag = function(){ dataLayer.push(arguments); }; gtag('js', new Date()); gtag('config', c.analyticsId);
   }
+  if (!['localhost', '127.0.0.1', '::1'].includes(location.hostname)) {
+    const va = document.createElement('script');
+    va.defer = true; va.src = '/_vercel/insights/script.js'; document.head.appendChild(va);
+  }
+  const viewed = new Set();
+  const observer = 'IntersectionObserver' in window ? new IntersectionObserver((entries) => entries.forEach((entry) => {
+    if (!entry.isIntersecting || viewed.has(entry.target.id)) return;
+    viewed.add(entry.target.id); track(entry.target.id === 'pricingTables' ? 'pricing_view' : 'gallery_view');
+  }), { threshold: .25 }) : null;
+  ['pricingTables', 'galleryGrid'].forEach((id) => { const el = document.getElementById(id); if (el && observer) observer.observe(el); });
 })();
