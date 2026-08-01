@@ -6,7 +6,8 @@ Premium, mobile-first direct-booking website for furnished studio stays at Gaur 
 
 - Luxury navy, ivory and restrained-gold visual system
 - Central business, pricing, amenity and integration configuration
-- Official booking number: +91 78270 50079
+- Official office number: +91 92117 01998
+- Bookings, WhatsApp and all enquiries: +91 78270 50079
 - Smart booking assistant with stay recommendation and unique enquiry reference
 - Browser lead backup plus optional webhook delivery
 - WhatsApp enquiry messages requesting current real photos, video and final price

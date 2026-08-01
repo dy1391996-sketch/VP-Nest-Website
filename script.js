@@ -18,6 +18,8 @@
   $$('[data-current-year]').forEach((el) => el.textContent = new Date().getFullYear());
   $$('[data-phone]').forEach((el) => el.textContent = c.phoneDisplay);
   $$('[data-phone-link]').forEach((el) => el.href = `tel:+${c.phone}`);
+  $$('[data-official-phone]').forEach((el) => el.textContent = c.officialPhoneDisplay);
+  $$('[data-official-phone-link]').forEach((el) => el.href = `tel:+${c.officialPhone}`);
   $$('[data-email]').forEach((el) => { el.textContent = c.email; el.href = `mailto:${c.email}`; });
   $$('[data-whatsapp]').forEach((el) => { el.href = waUrl(el.dataset.message || defaultMessage()); el.target = "_blank"; el.rel = "noopener"; });
 
@@ -30,6 +32,7 @@
   $$('[data-track]').forEach((el) => el.addEventListener('click', () => track(el.dataset.track)));
   $$('[data-whatsapp]').forEach((el) => el.addEventListener('click', () => track('whatsapp_click', { source: source() })));
   $$('[data-phone-link]').forEach((el) => el.addEventListener('click', () => track('phone_click')));
+  $$('[data-official-phone-link]').forEach((el) => el.addEventListener('click', () => track('official_phone_click')));
 
   const pricing = $('#pricingTables');
   if (pricing) {

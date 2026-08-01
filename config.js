@@ -3,6 +3,8 @@ window.VP_NEST_CONFIG = {
   operatingEntity: "THE99CREW FACILITY MANAGEMENT",
   phoneDisplay: "+91 78270 50079",
   phone: "917827050079",
+  officialPhoneDisplay: "+91 92117 01998",
+  officialPhone: "919211701998",
   email: "thestudio99stay@gmail.com",
   address: "Gaur City Center, Sector 4, Greater Noida West, Uttar Pradesh",
   siteUrl: "https://vp-nest-website.vercel.app",

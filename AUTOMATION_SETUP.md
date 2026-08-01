@@ -15,7 +15,7 @@ Do not put private API tokens in `config.js` or any browser file.
 
 Automatic photo delivery requires an approved WhatsApp Business API provider such as MSG91 or an equivalent provider.
 
-1. Connect the official number `917827050079` to the provider.
+1. Connect the booking and enquiry number `917827050079` to the provider. The official office number is `919211701998`.
 2. Create an approved WhatsApp template acknowledging the enquiry reference.
 3. In Make, Zapier or iZap, trigger the workflow from the lead webhook.
 4. Look up the available studio in Google Sheets or the booking system.
