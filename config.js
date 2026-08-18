@@ -7,7 +7,7 @@ window.VP_NEST_CONFIG = {
   officialPhone: "919211701998",
   email: "thestudio99stay@gmail.com",
   address: "Gaur City Center, Sector 4, Greater Noida West, Uttar Pradesh",
-  siteUrl: "https://vpnest.in",
+  siteUrl: "https://www.vpnest.in",
   leadWebhookUrl: "",
   googleReviewUrl: "",
   analyticsId: "",

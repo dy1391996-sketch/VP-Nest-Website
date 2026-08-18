@@ -73,10 +73,10 @@
       "has": [
         {
           "type": "host",
-          "value": "www.vpnest.in"
+          "value": "vpnest.in"
         }
       ],
-      "destination": "https://vpnest.in/:path*",
+      "destination": "https://www.vpnest.in/:path*",
       "permanent": true
     },
     {
@@ -87,7 +87,7 @@
           "value": "vp-nest-website.vercel.app"
         }
       ],
-      "destination": "https://vpnest.in/:path*",
+      "destination": "https://www.vpnest.in/:path*",
       "permanent": true
     }
   ]

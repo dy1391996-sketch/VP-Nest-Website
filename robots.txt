@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://vpnest.in/sitemap.xml
+Sitemap: https://www.vpnest.in/sitemap.xml
