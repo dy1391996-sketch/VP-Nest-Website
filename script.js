@@ -45,7 +45,7 @@
   const lightbox = $('#lightbox');
   let activeImage = 0;
   if (gallery && c.gallery.length) {
-    gallery.innerHTML = c.gallery.map((item, index) => `<button class="concept-card" type="button" data-gallery-index="${index}" aria-label="Open ${item.category} concept visual"><img src="${item.src}" alt="${item.alt}" width="${item.width}" height="${item.height}" loading="${index < 2 ? 'eager' : 'lazy'}" decoding="async"><span class="concept-card-overlay"><strong>${item.category}</strong><span>AI CONCEPT</span></span></button>`).join('');
+    gallery.innerHTML = c.gallery.map((item, index) => `<button class="concept-card" type="button" data-gallery-index="${index}" aria-label="Open ${item.category} concept visual"><img src="${item.src}" alt="${item.alt}" width="${item.width}" height="${item.height}" loading="${index < 2 ? 'eager' : 'lazy'}" decoding="async"><span class="concept-card-overlay"><strong>${item.category}</strong><span>CONCEPT</span></span></button>`).join('');
   }
   const showImage = (index) => {
     if (!lightbox || !c.gallery.length) return;
