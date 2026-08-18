@@ -1,4 +1,8 @@
-# VP Nest – The Studio99Stay
+# VP Nest | The99Crew
+
+Public website title: **VP Nest | Premium Studio Apartments**
+
+Primary domain: **https://vpnest.in**
 
 Premium, mobile-first direct-booking website for furnished studio stays at Gaur City Center, Greater Noida West.
 

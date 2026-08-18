@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300" role="img" aria-labelledby="title desc">
   <title id="title">VP Nest primary logo</title>
-  <desc id="desc">Navy VP monogram beneath a gold roof, with VP Nest and The Studio99Stay wordmark.</desc>
+  <desc id="desc">Navy VP monogram beneath a gold roof, with VP Nest and The99Crew wordmark.</desc>
   <rect width="1200" height="300" fill="none"/>
   <g transform="translate(20 30)">
     <rect width="220" height="220" rx="34" fill="#0B2545"/>
@@ -11,7 +11,7 @@
   </g>
   <g transform="translate(285 0)">
     <text x="0" y="142" font-family="DejaVu Sans, Arial, sans-serif" font-size="96" font-weight="700" letter-spacing="2" fill="#0B2545">VP NEST</text>
-    <text x="4" y="194" font-family="DejaVu Sans, Arial, sans-serif" font-size="31" font-weight="700" letter-spacing="5" fill="#2E74B5">THE STUDIO99STAY</text>
+    <text x="4" y="194" font-family="DejaVu Sans, Arial, sans-serif" font-size="31" font-weight="700" letter-spacing="5" fill="#2E74B5">THE99CREW</text>
     <line x1="4" y1="217" x2="730" y2="217" stroke="#BE8A2D" stroke-width="4"/>
     <text x="4" y="252" font-family="DejaVu Sans, Arial, sans-serif" font-size="23" font-weight="400" letter-spacing="1" fill="#555555">Professional stays. Reliable operations.</text>
   </g>
