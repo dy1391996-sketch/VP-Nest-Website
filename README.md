@@ -2,7 +2,7 @@
 
 Public website title: **VP Nest | Premium Studio Apartments**
 
-Primary domain: **https://vpnest.in**
+Primary domain: **https://www.vpnest.in**
 
 Premium, mobile-first direct-booking website for furnished studio stays at Gaur City Center, Greater Noida West.
 
