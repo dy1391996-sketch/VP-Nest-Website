@@ -21,3 +21,5 @@
   .hero-media > .real-hero-photo {aspect-ratio: 4/5;}
   .real-photo-gallery .concept-card {grid-column: 1/-1;}
 }
+
+#googleReviewButton[hidden] {display: none;}
