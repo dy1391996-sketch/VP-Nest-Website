@@ -12,8 +12,7 @@ Premium, mobile-first direct-booking website for furnished studio stays at Gaur 
 - Central business, pricing, amenity and integration configuration
 - Official office number: +91 92117 01998
 - Bookings, WhatsApp and all enquiries: +91 78270 50079
-- Smart booking assistant with stay recommendation and unique enquiry reference
-- Browser lead backup plus optional webhook delivery
+- Four required booking details and a unique enquiry reference
 - WhatsApp enquiry messages requesting current real photos, video and final price
 - Weekday and weekend indicative pricing with clear disclaimer
 - Mobile sticky WhatsApp, call and photo actions
@@ -23,7 +22,7 @@ Premium, mobile-first direct-booking website for furnished studio stays at Gaur 
 
 ## Configuration
 
-Edit `config.js` for business data, pricing, amenities, verified social URLs, the Google review URL, GA4 and the lead webhook. Keep private WhatsApp API tokens server-side only.
+Edit `config.js` for business data, pricing, amenities, verified social URLs, the Google review URL and GA4. Keep private WhatsApp API tokens server-side only.
 
 See `AUTOMATION_SETUP.md` for Google Sheets, Make, Zapier, iZap, MSG91 and WhatsApp Business API integration guidance.
 
