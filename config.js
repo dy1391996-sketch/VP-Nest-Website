@@ -8,7 +8,6 @@ window.VP_NEST_CONFIG = {
   email: "thestudio99stay@gmail.com",
   address: "Gaur City Center, Sector 4, Greater Noida West, Uttar Pradesh",
   siteUrl: "https://www.vpnest.in",
-  leadWebhookUrl: "",
   googleReviewUrl: "",
   analyticsId: "",
   social: { instagram: "", facebook: "", googleBusiness: "", googleMaps: "", youtube: "", x: "", linkedin: "" },
@@ -23,11 +22,40 @@ window.VP_NEST_CONFIG = {
     "Parking subject to building rules", "Guest Support"
   ],
   gallery: [
-    { src: "assets/studios/studio-city-view-bedroom.webp", category: "City View Bedroom", alt: "Illustrative concept of a premium furnished studio bedroom with a high-floor city view", width: 1672, height: 941 },
-    { src: "assets/studios/studio-luxury-bedroom.webp", category: "Premium Bedroom", alt: "Illustrative concept of an elegant furnished studio bedroom with warm wood and navy finishes", width: 1448, height: 1086 },
-    { src: "assets/studios/studio-living-area.webp", category: "Living & Work Area", alt: "Illustrative concept of a compact studio living area with sofa and workspace", width: 1448, height: 1086 },
-    { src: "assets/studios/studio-kitchenette.webp", category: "Kitchenette", alt: "Illustrative concept of a compact furnished-studio kitchenette", width: 1448, height: 1086 },
-    { src: "assets/studios/studio-smart-tv.webp", category: "Smart TV", alt: "Illustrative concept of a premium studio entertainment corner with smart TV", width: 1448, height: 1086 },
-    { src: "assets/studios/studio-night-city-view.webp", category: "Night Ambience", alt: "Illustrative concept of a furnished studio overlooking a city skyline at night", width: 1448, height: 1086 }
+    {
+      "src": "assets/real-studio/studio-bedroom.webp",
+      "category": "Studio bedroom",
+      "alt": "Double bed with a black textured headboard, pink pillows and folded towels",
+      "width": 1080,
+      "height": 1440
+    },
+    {
+      "src": "assets/real-studio/studio-room-overview.webp",
+      "category": "Studio overview",
+      "alt": "Wide view of the double bed, curtained windows and TV in the studio",
+      "width": 1080,
+      "height": 1440
+    },
+    {
+      "src": "assets/real-studio/studio-seating.webp",
+      "category": "Seating and TV",
+      "alt": "Studio seating area and television with a circular blue rug",
+      "width": 1080,
+      "height": 1440
+    },
+    {
+      "src": "assets/real-studio/studio-layout.webp",
+      "category": "Room layout",
+      "alt": "View across the studio toward the kitchenette and entry",
+      "width": 1080,
+      "height": 1440
+    },
+    {
+      "src": "assets/real-studio/studio-window-side.webp",
+      "category": "Window-side seating",
+      "alt": "Bed and seating beside the studio’s full-width curtained windows",
+      "width": 1080,
+      "height": 1440
+    }
   ]
 };

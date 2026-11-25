@@ -1,15 +1,8 @@
 # VP Nest lead and WhatsApp automation setup
 
-The website works without any paid API. Every completed enquiry is saved in the guest's browser and opens WhatsApp with a structured message and unique reference.
+The website creates a WhatsApp message with the guest's stay details and a unique enquiry reference. It does not save booking details in browser storage or send them to a lead webhook. Nothing is submitted by the site; the guest sends the message from WhatsApp.
 
-## Lead webhook
-
-1. Create a webhook in Make, Zapier, iZap or your CRM.
-2. Connect the webhook to Google Sheets or your lead database.
-3. Set `leadWebhookUrl` in `config.js` to the public webhook URL.
-4. Map these fields: enquiryReference, name, phone, checkinDate, checkinTime, duration, guests, budget, preference, purpose, request, recommendation, source, pageUrl and createdTimestamp.
-
-Do not put private API tokens in `config.js` or any browser file.
+If adding CRM capture in the future, use a server-side integration and update the form notice and privacy policy to match the data actually collected. Do not put private API tokens in browser files.
 
 ## Automatic real-photo reply
 
@@ -17,7 +10,7 @@ Automatic photo delivery requires an approved WhatsApp Business API provider suc
 
 1. Connect the booking and enquiry number `917827050079` to the provider. The official office number is `919211701998`.
 2. Create an approved WhatsApp template acknowledging the enquiry reference.
-3. In Make, Zapier or iZap, trigger the workflow from the lead webhook.
+3. In Make, Zapier or iZap, trigger the workflow from an incoming WhatsApp message.
 4. Look up the available studio in Google Sheets or the booking system.
 5. Send only verified media for that studio using provider-hosted media IDs or public HTTPS URLs.
 6. Send the final price, timing and booking terms for manual confirmation.
