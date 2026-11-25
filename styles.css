@@ -23,3 +23,87 @@
 }
 
 #googleReviewButton[hidden] {display: none;}
+
+/* Homepage: a warm editorial frame for the real studio photography. */
+.boutique-hero {
+  min-height: 0;
+  color: #15263a;
+  background: linear-gradient(110deg, #fbf7ef, #f4ead8);
+}
+.boutique-hero .hero-grid {
+  grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr);
+  gap: clamp(26px, 5vw, 72px);
+  padding: clamp(34px, 5vw, 68px) 0;
+}
+.boutique-hero .hero-copy .eyebrow { color: #77592b; }
+.boutique-hero h1 {
+  max-width: 11ch;
+  color: #15263a;
+  font-size: clamp(2.8rem, 5.4vw, 5.25rem);
+  line-height: 1.02;
+  letter-spacing: -.028em;
+}
+.boutique-hero .hero-copy .boutique-location {
+  color: #77592b;
+  font-weight: 700;
+  margin: 14px 0 6px;
+}
+.boutique-hero .hero-copy .boutique-intro { color: #48576b; max-width: 35ch; }
+.boutique-hero .hero-copy .hero-starting-rate {
+  color: #15263a;
+  margin: 17px 0 0;
+  font-size: .94rem;
+}
+.boutique-hero .hero-actions { align-items: center; gap: 14px 20px; margin-top: 23px; }
+.boutique-hero .boutique-booking { background: #15263a; color: #fff8ea; text-align: center; }
+.boutique-hero .boutique-booking:hover { background: #283f56; }
+.boutique-gallery-link {
+  display: inline-block;
+  color: #15263a;
+  padding: 10px 0;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  font-weight: 700;
+}
+.boutique-hero .boutique-media {
+  margin: 0;
+  border: 1px solid #d9c9ab;
+  border-radius: 20px;
+  background: #fffaf1;
+  box-shadow: 0 18px 42px rgba(64, 45, 20, .17);
+}
+.boutique-hero .boutique-media > img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 6/5;
+  object-fit: cover;
+  object-position: center 66%;
+}
+.boutique-media figcaption {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 3px 12px;
+  padding: 11px 15px;
+  color: #4f5a67;
+  font-size: .78rem;
+}
+.boutique-media figcaption strong { color: #15263a; }
+@media (max-width: 700px) {
+  .boutique-hero .hero-grid { grid-template-columns: minmax(0, 1fr); gap: 24px; padding: 30px 0; }
+  .boutique-hero h1 { max-width: 14ch; font-size: clamp(2.55rem, 8.4vw, 3.5rem); }
+  .boutique-hero .hero-copy .boutique-location { margin-top: 11px; }
+  .boutique-hero .hero-actions .btn { width: auto; max-width: 100%; }
+  .boutique-hero .boutique-media > img { aspect-ratio: 5/4; }
+}
+@media (max-width: 620px) {
+  .mobile-bar.boutique-mobile { grid-template-columns: 1fr; padding-inline: 12px; }
+  .boutique-mobile a {
+    padding: 11px 8px;
+    background: #f2ddb3;
+    color: #15263a;
+    border-radius: 11px;
+    font-size: .9rem;
+  }
+}
